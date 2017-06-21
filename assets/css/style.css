@@ -20,3 +20,65 @@
     width: 100px;
     height: 23px;
 }
+
+
+/* Estilos para el home */
+
+.photo-container {
+    background-image: url(../img/taxi.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+
+/* Estilos para la card */
+
+.container-card {
+    position: absolute;
+    overflow: auto;
+    background-color: #fcb100;
+    width: 500px;
+    height: 420px;
+    top: 320px;
+    right: 0;
+    padding: 30px;
+}
+
+.mrg-top-title {
+    margin-top: -5px;
+}
+
+.color-white {
+    color: white;
+}
+
+.mrg-btm-text {
+    margin-bottom: 40px;
+}
+
+.logo-blanco {
+    width: 80px;
+    height: 18px;
+    margin-left: 5px;
+}
+
+.span-regist {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form-registro {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid white;
+    width: 30%
+}
+
+.btn-conductor {
+    margin-top: 50px;
+    font-size: 16px;
+    background-color: white
+}
