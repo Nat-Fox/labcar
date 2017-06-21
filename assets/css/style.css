@@ -189,14 +189,14 @@ body {
 
 #first-input,
 #second-input {
-    width: 60%;
+    width: 80%;
     margin-bottom: 20px;
 }
 
 .btn-show {
     background-color: white;
     color: black;
-    width: 40%;
+    width: 50%;
     border-radius: 0;
     margin-left: 35px;
 }
