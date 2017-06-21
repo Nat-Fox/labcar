@@ -1,10 +1,10 @@
-/* Estilos generales */
-
 * {
-    /* fuente requerida */
     font-family: 'Merriweather Sans', sans-serif;
     padding: 0;
     margin: 0;
+}
+
+body {
     overflow-x: hidden
 }
 
@@ -147,8 +147,7 @@
     color: white;
     position: absolute;
     z-index: 1;
-    background-color: black;
-    opacity: 0.4;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .text-conduce {
@@ -159,4 +158,35 @@
 .btn-warning {
     background-color: #fcb100;
     margin-bottom: 430px;
+}
+
+
+/* section mapa */
+
+#map {
+    height: 50vh;
+    border: 2px solid white;
+    margin-bottom: 50px;
+}
+
+#find-us {
+    background-color: #fcb100;
+}
+
+.content-map {
+    margin-top: 50px;
+}
+
+#first-input,
+#second-input {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.btn-show {
+    background-color: white;
+    color: black;
+    width: 40%;
+    border-radius: 0;
+    margin-left: 35px;
 }

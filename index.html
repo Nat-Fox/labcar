@@ -2,13 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>LabCar</title>
+    <title>Labcar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CDN font-awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
-    <!-- CDN bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -64,28 +67,11 @@
                         <button type="button" class="btn btn-conductor">Conviértete en un conductor</button>
                     </form>
                 </div>
-
-
             </div>
         </div>
     </section>
-
-    <!--<section id="card">
-        <div class="container-card" id="container-card">
-            <h3 class="color-white">Disfruta del viaje</h3>
-            <h3 class="color-white mrg-top-title mrg-btm-text">Eres dueño de tu tiempo</h3>
-            <h4 class="color-white mrg-btm-text">
-                Viaja con
-                <img class="logo-blanco" src="assets/img/logo-blanco.png" alt="Logo Blanco">
-            </h4>
-            <h5 class="color-white mrg-btm-text">REGISTRATE</h5>
-            <input class="form-registro" type="text" name="" value="">
-            <span class="color-white span-regist">O bien</span>
-            <input class="form-registro" type="text" name="" value="">
-            <button type="button" class="btn btn-conductor">Conviértete en un conductor</button>
-        </div>
-    </section>-->
     <!-- fin card -->
+
 
     <!--section home-->
     <section id="phone">
@@ -116,25 +102,57 @@
     <section id="card" class="img-conduce">
         <div class="container-fluid">
             <div class="row">
+                <!--PENDIENTE -> opacidad del texto-->
                 <div class="col-md-offset-8 col-md-4 col-xs-12 text-card-two">
-                    <h3 class="color-white text-conduce mrg-btm-text">Conduce cuando quieras</h3>
-                    <p class="color-white mrg-btm-text">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-                    <button type="button" class="btn btn-warning mrg-btm-text">Conviértete en conductor</button>
+                    <div>
+                        <h3 class="color-white text-conduce mrg-btm-text">Conduce cuando quieras</h3>
+                        <p class="color-white mrg-btm-text">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+                        <button type="button" class="btn btn-warning mrg-btm-text">Conviértete en conductor</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- fin card -->
 
+    <!-- section mapa -->
+    <section id="find-us">
+        <div class="container">
+            <div class="row">
+                <div class="content-map">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <h3 class="color-white">Tarifas.</h3>
+                            <h5 class="color-white mrg-btm-text">Consulta las tarifas LabCar aquí</h5>
+                            <!-- inputs, con js se autocompleta -->
 
+                            <input id="first-input" class="form-control" type="text" placeholder="Ingrese su punto de partida">
+                            <input id="second-input" class="form-control" type="text" placeholder="Ingrese su destino">
+                            <button id="btn-ruta" type="button" class="btn btn-show">¡TRAZAR RUTA!</button>
 
-    <!-- CDN -->
+                        </div>
+                        <!--aqui ira el mapa-->
+
+                        <div class="col-md-6" id="map">
+
+                            <!--aqui ira el mapa-->
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- fin section mapa -->
+
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- API key -->
-    <!-- aca irá la API key para el mapa -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAqYWU6ZR0mAEhzBrDE-XUIQe1rebNWME&libraries=places&callback=initMap" async defer></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
