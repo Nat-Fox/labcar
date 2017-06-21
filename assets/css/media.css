@@ -1,0 +1,38 @@
+/* estado normal*/
+
+@media only screen and (min-width: 1281px) {
+    /*body {
+        background-color: blue
+    }*/
+}
+
+
+/* estado pantallas pequeñas */
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    /*body {
+        background-color: aqua
+    }*/
+}
+
+
+/* iPad */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    /*body {
+        background-color: purple
+    }*/
+}
+
+
+/* mobile */
+
+@media only screen and (min-width: 1px) and (max-width: 480px) {
+    /* logo */
+    .logo-nav {
+        margin-left: 60px;
+    }
+    .desaparecer {
+        display: none
+    }
+}

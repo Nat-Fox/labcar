@@ -5,7 +5,7 @@
 }
 
 body {
-    overflow-x: hidden
+    /*overflow-x: hidden;*/
 }
 
 
@@ -164,7 +164,9 @@ body {
 /* section mapa */
 
 #map {
-    height: 50vh;
+    /*height: 50vh;*/
+    width: 600px;
+    height: 400px;
     border: 2px solid white;
     margin-bottom: 50px;
 }
@@ -193,6 +195,13 @@ body {
 
 .form-control {
     background-color: #fcb100;
+    border: 1px solid white;
+}
+
+.border-map {
+    width: 620px;
+    height: 420px;
+    padding: 10px;
     border: 1px solid white;
 }
 
@@ -256,4 +265,14 @@ body {
 
 .mrg-footer {
     margin-bottom: 40px
+}
+
+
+/* Estilos para el responsive */
+
+
+/* toogle a la izquierda */
+
+.navbar-toggle {
+    float: left;
 }

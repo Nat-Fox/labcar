@@ -16,8 +16,8 @@ function initMap() {
     autocomplete.bindTo('bounds', map);
 
     /***************** Agregando autocompletado del segundo input ********************/
-    var input = document.getElementById('second-input');
-    var autocomplete = new google.maps.places.Autocomplete(input);
+    var inputDos = document.getElementById('second-input');
+    var autocomplete = new google.maps.places.Autocomplete(inputDos);
     autocomplete.bindTo('bounds', map);
 
     /***************** Evento para encontrar la localización actual ********************/
@@ -34,7 +34,7 @@ function initMap() {
 
 
     // Permite pedir la ubicación actual cuando la pagina esta cargada
-    // window.addEventListener("load", buscar);
+    // window.addEventListener("load", buscar); 
 
     var latitud, longitud;
     var funcionExito = function(posicion) {
