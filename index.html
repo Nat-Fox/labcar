@@ -51,7 +51,7 @@
 
 
     <!-- Card -->
-    <section id="card" class="photo-container">
+    <section id="card" class="photo-container photo-first-card">
         <div class="container-fluid container-card-one">
             <div class="col-lg-offset-8 col-lg-4 col-md-offset-8 col-md-4 col-xs-12 text-card-one desaparecer">
                 <div class="content-text-card-one">
@@ -66,12 +66,25 @@
                         <input class="form-registro" type="text" name="" value="">
                         <span class="color-white span-regist">O bien</span>
                         <input class="form-registro" type="text" name="" value="">
-                        <button type="button" class="btn btn-conductor">Conviértete en un conductor</button>
+                        <button type="button" class="btn btn-conductor pointer">Conviértete en un conductor</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="photo-container comenzar-oculto">
+        <div class="container-fluid container-card-two">
+            <div class="col-md-offset-8 col-md-4 col-xs-12 text-card-two-media aparecer">
+                <div>
+                    <h3 class="color-white mrg-left-tex media-text-card">Comienza a viajar con</h3>
+                    <img class="img-responsive logo-media-card" src="assets/img/logo-blanco.png" alt="Logo Blanco">
+                    <p><button type="button" class="btn btn-conductor pointer mrg-left-tex">Descarga el app</button></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- fin card -->
 
 
@@ -85,7 +98,8 @@
                             <div class="col-md-offset-1 col-md-5 col-xs-12">
                                 <img class="img-responsive celular" src="assets/img/celular.png" alt="Celular">
                             </div>
-                            <div class="col-md-6 col-xs-12 color-white">
+                            <!-- Este texto desaparece en media -->
+                            <div class="col-md-6 col-xs-12 color-white desaparecer">
                                 <h3 class="mrg-btm-text">Descarga la nueva app</h3>
                                 <h5 class="mrg-btm-text">
                                     La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.
@@ -104,7 +118,7 @@
 
 
     <!-- Card -->
-    <section id="card" class="img-conduce">
+    <!--<section id="card" class="img-conduce">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-offset-8 col-md-4 col-xs-12 text-card-two">
@@ -116,11 +130,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- fin card -->
 
     <!-- section mapa -->
-    <section id="find-us">
+    <!--<section id="find-us">
         <div class="container">
             <div class="row">
                 <div class="content-map">
@@ -128,7 +142,8 @@
                         <div class="col-md-6 col-xs-12">
                             <h3 class="color-white">Tarifas.</h3>
                             <h5 class="color-white mrg-btm-text">Consulta las tarifas LabCar aquí</h5>
-                            <!-- inputs, con js se autocompleta -->
+                            <!-- inputs, con js se autocompleta --
+                            <img src="assets/img/circulo.png" alt="circulo" class="img-responsive">
                             <input id="first-input" class="form-control" type="text" placeholder="Ingrese su punto de partida">
                             <input id="second-input" class="form-control" type="text" placeholder="Ingrese su destino">
                             <button id="btn-ruta" type="button" class="btn btn-show">¡TRAZAR RUTA!</button>
@@ -138,7 +153,7 @@
                                 <div class="row">
                                     <div class="border-map">
                                         <div class="col-md-12" id="map">
-                                            <!--aqui ira el mapa-->
+                                            <!--aqui ira el mapa--
                                         </div>
                                     </div>
                                 </div>
@@ -148,7 +163,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <!-- fin section mapa -->
 
     <!-- footer -->

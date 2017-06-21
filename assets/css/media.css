@@ -4,6 +4,10 @@
     /*body {
         background-color: blue
     }*/
+    /* La segunda card comienza oculta */
+    .comenzar-oculto {
+        display: none
+    }
 }
 
 
@@ -32,7 +36,16 @@
     .logo-nav {
         margin-left: 60px;
     }
+    /* Desaparece la primera card */
     .desaparecer {
-        display: none
+        display: none;
+    }
+    /* La segunda card que empieza oculta aparece */
+    .comenzar-oculto {
+        visibility: visible
+    }
+    /* Se oculta la foto correspondiente a la primera card*/
+    .photo-first-card {
+        display: none;
     }
 }

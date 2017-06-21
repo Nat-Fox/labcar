@@ -25,8 +25,12 @@ body {
 
 /* Estilos para el home */
 
-.container-card-one {
-    /* margin-right: -15px; */
+.container-card-one,
+.container-card-two {
+    margin-right: 15px;
+}
+
+.container-fluid {
     margin-right: 15px;
 }
 
@@ -283,4 +287,25 @@ body {
 
 .navbar-toggle {
     float: left;
+}
+
+.media-text-card {
+    font-size: 40px;
+}
+
+.logo-media-card {
+    margin-left: 25px;
+}
+
+.text-card-two-media {
+    margin-left: 15px;
+    margin-top: 250px;
+    background-color: #fcb100;
+}
+
+
+/* quita el padding por defecto del container-fluid */
+
+.container-card-two {
+    margin-right: -15px;
 }
