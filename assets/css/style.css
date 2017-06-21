@@ -190,3 +190,70 @@ body {
     border-radius: 0;
     margin-left: 35px;
 }
+
+.form-control {
+    background-color: #fcb100;
+    border: 1px solid white;
+}
+
+
+/* cambio de color de placeholder para diferentes navegadores */
+
+.form-control::-webkit-input-placeholder {
+    color: white;
+}
+
+.form-control:-moz-placeholder {
+    color: white;
+}
+
+.form-control::-moz-placeholder {
+    color: white;
+}
+
+.form-control:-ms-input-placeholder {
+    color: white;
+}
+
+
+/* estilos para el footer */
+
+#footer {
+    background-color: #2b2b2b;
+}
+
+.content-footer {
+    /*background-color: #2b2b2b;*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.footer-campo {
+    margin-bottom: 10px;
+}
+
+.markt {
+    margin-top: 140px;
+}
+
+.photo-footer {
+    margin-bottom: 20px;
+    width: 120px;
+    height: 38px;
+}
+
+.redes-sociales {
+    margin-right: 10px;
+}
+
+.copyright {
+    background-color: #2b2b2b;
+}
+
+.mrg-footer {
+    margin-bottom: 40px
+}

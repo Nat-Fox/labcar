@@ -32,7 +32,9 @@ function initMap() {
         }
     }
 
-    window.addEventListener("load", buscar);
+
+    // Permite pedir la ubicación actual cuando la pagina esta cargada
+    // window.addEventListener("load", buscar);
 
     var latitud, longitud;
     var funcionExito = function(posicion) {
