@@ -5,6 +5,7 @@
     font-family: 'Merriweather Sans', sans-serif;
     padding: 0;
     margin: 0;
+    overflow-x: hidden
 }
 
 
@@ -35,15 +36,21 @@
 
 /* Estilos para la card */
 
-.container-card {
-    position: absolute;
-    overflow: auto;
+.text-card-one {
+    margin-top: 250px;
     background-color: #fcb100;
-    width: 500px;
-    height: 420px;
-    top: 320px;
-    right: 0;
-    padding: 30px;
+}
+
+.container-card-one {
+    margin-right: -15px;
+}
+
+.content-text-card-one {
+    margin-top: 10px;
+}
+
+.mrg-left-tex {
+    margin-left: 10px;
 }
 
 .mrg-top-title {
@@ -80,7 +87,8 @@
 .btn-conductor {
     margin-top: 50px;
     font-size: 16px;
-    background-color: white
+    background-color: white;
+    margin-bottom: 40px;
 }
 
 
@@ -115,4 +123,40 @@
 
 .no-padding [class*="col-"] {
     padding: 0;
+}
+
+
+/* Estilos para section conduce */
+
+.img-conduce {
+    background-image: url(../img/conduce.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+
+/* Estilos para la segunda card */
+
+.text-card-two {
+    position: relative;
+    overflow: auto;
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.text-conduce {
+    margin-top: 90px;
+    height: 100%;
+}
+
+.btn-warning {
+    background-color: #fcb100;
+    margin-bottom: 430px;
 }
