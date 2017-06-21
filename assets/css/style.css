@@ -1,0 +1,22 @@
+/* Estilos generales */
+
+* {
+    /* fuente requerida */
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Estilos para la navbar */
+
+.nav-labcar {
+    background-color: transparent;
+    border: transparent;
+    padding: 15px;
+}
+
+.logo-nav {
+    width: 100px;
+    height: 23px;
+}
