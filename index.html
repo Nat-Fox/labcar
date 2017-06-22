@@ -163,12 +163,36 @@
                         <div class="col-md-6 col-xs-12">
                             <h3 class="color-white">Tarifas.</h3>
                             <h5 class="color-white mrg-btm-text">Consulta las tarifas LabCar aquí</h5>
-                            <!-- inputs, con js se autocompleta -->
-                            <img src="assets/img/circulo.png" alt="circulo" class="img-responsive">
-                            <input id="first-input" class="form-control" type="text" placeholder="Ingrese su punto de partida">
-                            <input id="second-input" class="form-control" type="text" placeholder="Ingrese su destino">
-                            <button id="btn-ruta" type="button" class="btn btn-show">¡TRAZAR RUTA!</button>
+
+                            <div class="col-md-12 col-xs-12">
+                                <div class="row">
+                                    <div class="col-md-1 col-xs-2">
+                                        <img src="assets/img/circulo.png" alt="circulo" class="img-responsive icon-input">
+                                    </div>
+                                    <div class="col-md-11">
+                                        <input id="first-input" class="form-control" type="text" placeholder="Ingrese su punto de partida">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1 col-xs-2">
+                                        <img src="assets/img/flecha.png" alt="circulo" class="img-responsive icon-input">
+                                    </div>
+                                    <div class="col-md-11">
+                                        <input id="second-input" class="form-control" type="text" placeholder="Ingrese su destino">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-offset-3 col-md-9 col-xs-offset-2 col-xs-10">
+                                        <button id="btn-ruta" type="button" class="btn btn-show">¡TRAZAR RUTA!</button>
+                                        <div id="costo">
+                                            <!--Aqui ira el costo de la ruta-->
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+
                         <div class="col-md-6 col-xs-12">
                             <div class="container desaparecer">
                                 <div class="row">
@@ -192,10 +216,13 @@
         <footer class="color-white">
             <div class="container">
                 <div class="row content-footer">
-                    <img class="img-responsive" src="assets/img/logo-blanco.png" alt="logo blanco">
-                    <hr>
-                    <div class="col-md-12">
-                        <div class="col-md-offset-3 col-md-3">
+                    <img class="img-responsive logo-footer" src="assets/img/logo-blanco.png" alt="logo blanco">
+
+
+
+                    <div class="col-md-12 col-xs-12">
+                        <hr class="line">
+                        <div class="col-md-offset-3 col-md-3 col-xs-5">
                             <div class="pointer footer-campo">Viaja</div>
                             <div class="pointer footer-campo">Conduce</div>
                             <div class="pointer footer-campo">Ciudades</div>
@@ -205,7 +232,7 @@
                             <div class="pointer footer-campo">Países</div>
                             <div class="pointer footer-campo">Seguridad</div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 desaparecer">
                             <div class="pointer footer-campo">Oportunidades</div>
                             <div class="pointer footer-campo">Nuestra historia</div>
                             <div class="pointer footer-campo">API de LabCar</div>
@@ -215,15 +242,24 @@
                             <div class="pointer footer-campo">Laboratoria</div>
                             <div class="pointer footer-campo">Coders</div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-xs-6">
+                            <div class="row social-networks comenzar-oculto">
+                                <i class="fa fa-facebook pointer redes-sociales" aria-hidden="true"></i>
+                                <i class="fa fa-twitter pointer redes-sociales" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin pointer redes-sociales" aria-hidden="true"></i>
+                                <i class="fa fa-apple pointer redes-sociales" aria-hidden="true"></i>
+                                <i class="fa fa-play pointer redes-sociales" aria-hidden="true"></i>
+                            </div>
                             <div class="markt">
                                 <img class="photo-footer img-responsive" src="assets/img/app-store.png" alt="app store">
                                 <img class="photo-footer img-responsive" src="assets/img/google-play.png" alt="google play">
                             </div>
                         </div>
                     </div>
+
+
                 </div>
-                <div class="row">
+                <div class="row social-networks desaparecer">
                     <i class="fa fa-facebook pointer redes-sociales" aria-hidden="true"></i>
                     <i class="fa fa-twitter pointer redes-sociales" aria-hidden="true"></i>
                     <i class="fa fa-linkedin pointer redes-sociales" aria-hidden="true"></i>

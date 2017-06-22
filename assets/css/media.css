@@ -1,3 +1,47 @@
+/* mobile */
+
+@media only screen and (min-width: 1px) and (max-width: 480px) {
+    /* logo */
+    .logo-nav {
+        margin-left: 60px;
+    }
+    /* Desaparece la primera card */
+    .desaparecer {
+        display: none;
+    }
+    /* La segunda card que empieza oculta aparece */
+    .comenzar-oculto {
+        visibility: visible
+    }
+    /* Se oculta la foto correspondiente a la primera card*/
+    .photo-first-card {
+        display: none;
+    }
+    /* Desaparece la primera section de phone */
+    #phone {
+        display: none;
+    }
+    /* mayor bottom al presional el menu*/
+    .navbar-item {
+        margin-bottom: 35px;
+    }
+    /* media footer */
+    .logo-footer {
+        margin-left: 20px;
+    }
+    .footer-campo,
+    .social-networks {
+        margin-left: 25px;
+    }
+    hr {
+        margin-right: 25px;
+    }
+    .line {
+        margin-left: 25px;
+    }
+}
+
+
 /* estado normal*/
 
 @media only screen and (min-width: 1281px) {
@@ -28,33 +72,4 @@
         background-color: purple
     }*/
     /* La segunda card que empieza oculta aparece */
-}
-
-
-/* mobile */
-
-@media only screen and (min-width: 1px) and (max-width: 480px) {
-    /* logo */
-    .logo-nav {
-        margin-left: 60px;
-    }
-    /* Desaparece la primera card */
-    .desaparecer {
-        display: none;
-    }
-    /* La segunda card que empieza oculta aparece */
-    .comenzar-oculto {
-        visibility: visible
-    }
-    /* Se oculta la foto correspondiente a la primera card*/
-    .photo-first-card {
-        display: none;
-    }
-    /* Desaparece la primera section de phone */
-    #phone {
-        display: none;
-    }
-    .navbar-item {
-        margin-bottom: 35px;
-    }
 }

@@ -205,9 +205,9 @@ body {
 .btn-show {
     background-color: white;
     color: black;
-    width: 50%;
+    width: 60%;
     border-radius: 0;
-    margin-left: 35px;
+    margin-bottom: 50px;
 }
 
 .form-control {
@@ -220,6 +220,10 @@ body {
     height: 420px;
     padding: 10px;
     border: 1px solid white;
+}
+
+.icon-input {
+    margin-top: 8px;
 }
 
 

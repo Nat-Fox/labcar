@@ -34,7 +34,7 @@ function initMap() {
 
 
     // Permite pedir la ubicación actual cuando la pagina esta cargada
-    window.addEventListener("load", buscar);
+    //window.addEventListener("load", buscar);
 
     var latitud, longitud;
     var funcionExito = function(posicion) {
@@ -77,10 +77,41 @@ function initMap() {
             travelMode: 'DRIVING'
         }, function(response, status) {
             if (status === 'OK') {
+
+                var totalDistance = 0;
+                var totalDuration = 0;
+
+                // console.info('routes', response.routes);
+                var legs = response.routes[0].legs;
+
+                for (var i = 0; i < legs.length; ++i) {
+                    totalDistance += legs[i].distance.value;
+                    totalDuration += legs[i].duration.value;
+                }
+
+                // Valor de tarifa inventado
+                var costo = (totalDistance / 1000) * 500;
+
+                console.info('$ ', costo);
+
+                // obtengo el div donde voy a escribir el precio
+                var div = document.getElementById('costo');
+                // 
+                var h2 = document.createElement('h2');
+                // El texto es el valor del calculo realizado en la linea 93
+                var simbolo = document.createTextNode('$');
+                var texto = document.createTextNode(costo);
+                h2.appendChild(simbolo);
+                h2.appendChild(texto);
+                div.appendChild(h2);
+
+
+                // console.info('response ->', response);
                 directionsDisplay.setDirections(response);
+
                 var leg = response.routes[0].legs[0];
-                makeMarker(leg.start_location, icons.start, '');
-                makeMarker(leg.end_location, icons.end, '');
+                // makeMarker(leg.start_location, icons.start, '');
+                // makeMarker(leg.end_location, icons.end, '');
             } else {
                 window.alert('Directions request failed due to ' + status);
             }
@@ -95,14 +126,5 @@ function initMap() {
 
     document.getElementById('btn-ruta').addEventListener('click', onChangeHandler);
 
-    /***************** Para cambiar el icono ********************/
-    function makeMarker(position, icon, title) {
-        new google.maps.Marker({
-            position: position,
-            map: map,
-            icon: icon,
-            title: title
-        });
-    }
 
 };
