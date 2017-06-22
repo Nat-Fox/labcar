@@ -119,6 +119,12 @@ body {
     border-right: 1px solid white;
 }
 
+.container-phone-media {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border: 1px solid white;
+}
+
 .celular {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -164,7 +170,6 @@ body {
 
 .text-conduce {
     margin-top: 90px;
-    height: 100%;
 }
 
 .btn-warning {
@@ -298,7 +303,7 @@ body {
 }
 
 .text-card-two-media {
-    margin-left: 15px;
+    margin-left: 30px;
     margin-top: 250px;
     background-color: #fcb100;
 }
@@ -306,6 +311,6 @@ body {
 
 /* quita el padding por defecto del container-fluid */
 
-.container-card-two {
-    margin-right: -15px;
+.section-phone-media {
+    background-color: #fcb100;
 }

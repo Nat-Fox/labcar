@@ -17,6 +17,7 @@
     /*body {
         background-color: aqua
     }*/
+    /* La segunda card que empieza oculta aparece */
 }
 
 
@@ -26,6 +27,7 @@
     /*body {
         background-color: purple
     }*/
+    /* La segunda card que empieza oculta aparece */
 }
 
 
@@ -47,5 +49,12 @@
     /* Se oculta la foto correspondiente a la primera card*/
     .photo-first-card {
         display: none;
+    }
+    /* Desaparece la primera section de phone */
+    #phone {
+        display: none;
+    }
+    .navbar-item {
+        margin-bottom: 35px;
     }
 }
